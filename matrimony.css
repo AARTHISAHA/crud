@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: quotes;
+    src: url('../fonts/Tillana-Medium.ttf');
+  }
+  @font-face {
+    font-family: navbar;
+    src: url('../fonts/Langar-Regular.ttf');
+  }
+  @font-face {
+    font-family: couple;
+    src: url('../fonts/Merienda-Black.ttf');
+  }
+  @font-face {
+    font-family: find;
+    src: url('../fonts/Langar-Regular.ttf');
+  }
+  @font-face {
+    font-family: soul;
+    src: url('../fonts/GreatVibes-Regular.ttf');
+  }
+  @font-face {
+    font-family: head;
+    src: url('../fonts/Merienda-Black.ttf');
+  }
+  @font-face {
+    font-family: home;
+    src: url('../fonts/Tillana-Medium.ttf');
+  }
+  .banner{
+    background: linear-gradient(to right top,#99003C,#f0146c,#99003C);
+    
+  }
+  .banner_1{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/banner 3.jpg') no-repeat center center;
+    background-size: cover;
+    /* filter: blur(8px); */
+  }
+  .nav-item a{
+    color: #F0D6BF;
+    font-family: navbar;
+  
+  }
+  .soul{
+    font-family: soul;
+  }
+  .nav-item a:hover{
+  color:#EFD77D;
+  /* border-bottom: 2px solid #99003C; */
+  }
+  .banner1_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: couple;
+  }
+  .banner1_content{
+    z-index: 100;
+  }
+  .Couples{
+    color: #8c3135;
+    -webkit-text-stroke: 2px white;
+  }
+ 
+  .quotes{
+    color: pink;
+  }
+  .banner2{
+    background: none;
+  }
+  .logo{
+    border-radius: 50%;
+  }
+  q{
+    font-family: quotes;
+  }
+  .quotes1 .image1{
+    rotate: 30deg;
+  }
+  .quotes1 .image2{
+    rotate: 210deg;
+  }
+ 
+  .feature{
+    border-right: 1px solid grey;
+  }
+  
+  .card img{
+    height: 200px;
+  }
+  .footer{
+    color: #F0D6BF;
+  }
+  
+  @media screen and (min-width:320px) and (max-width:576px) {
+    .banner1_text{
+      padding-top: 30px;
+    }
+    .banner1_text h1{
+      font-size: 13px;
+    }
+    q{
+      font-size: 14px;
+    }
+    .couple_image{
+      width: auto;
+      height: 200px;
+      padding-top: 30px;
+    }
+    .couple_image img{
+      width: 100%;
+      height: 100%;
+    }
+    .feature{
+      border-right: none;
+    }
+  }
+  

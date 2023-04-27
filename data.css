@@ -1,0 +1,131 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+	 background: radial-gradient(circle at center, orangered, firebrick);
+	 z-index: 0;
+}
+ .container {
+	 position: relative;
+	 width: 600px;
+	 height: 300px;
+	 margin: 30px auto;
+}
+ .container .header {
+	 position: absolute;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 background: white;
+	 width: 100%;
+	 height: 45px;
+	 border-bottom: 1px solid lightgrey;
+	 z-index: 10;
+	 top: 0;
+	 left: 0;
+}
+ .container .header .indicator {
+	 position: relative;
+	 display: inline-block;
+	 width: 12px;
+	 height: 12px;
+	 border-radius: 50%;
+	 margin-left: 15px;
+	 background-color: lightgrey;
+}
+ .container .header .indicator:first-of-type {
+	 margin-left: 0;
+}
+ .content {
+	 box-sizing: border-box;
+	 overflow: hidden;
+	 z-index: 5;
+	 display: block;
+	 position: absolute;
+	 background: white;
+	 color: grey;
+	 height: 685px;
+	 top: 45px;
+	 padding: 20px;
+	 width: 100%;
+	 box-shadow: 15px 5px 80px -20px rgba(0, 0, 0, 0.6);
+}
+ .content .content__box {
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 right: 1000px;
+	 padding: 10px;
+	 text-align: center;
+	 top: 0;
+}
+ .content .content__box.visible__no-animation {
+	 right: 0;
+}
+ .content .content__box.slide-in {
+	 animation: slide-in 500ms ease-in-out forwards;
+}
+ .content .content__box.slide-out {
+	 animation: slide-out 500ms ease-in-out forwards;
+}
+ .content .title {
+	 position: relative;
+	 text-align: center;
+	 text-transform: uppercase;
+	 color: lightblue;
+	 margin: 20px 0 40px 0;
+}
+ .content .description {
+	 text-align: center;
+	 margin-bottom: 10px;
+}
+ .content .body {
+	 text-align: center;
+	 padding: 20px;
+}
+ .content .body button {
+	 margin: 20px;
+}
+ .content .body .input-group {
+	 margin: 10px;
+}
+ content-1 {
+	 text-align: center;
+}
+ content-1 p {
+	 text-align: center;
+}
+ div.container div.header span.active {
+	 background-color: lightgreen;
+}
+
+.input input{
+    border: none;
+    border-bottom: 1px solid grey;
+}
+.continue{
+    border: none;
+    padding: 5px;
+    color: deeppink;
+    background-color: blanchedalmond;
+}
+ @keyframes slide-in {
+	 0% {
+		 right: 1000px;
+	}
+	 100% {
+		 right: 0;
+	}
+}
+ @keyframes slide-out {
+	 0% {
+		 left: 0;
+	}
+	 100% {
+		 left: 1000px;
+	}
+}
+ 
